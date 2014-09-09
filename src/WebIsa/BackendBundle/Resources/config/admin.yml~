@@ -1,0 +1,12 @@
+# WebIsa/BackendBundle/Resources/config/admin.yml
+services:
+    sonata.admin.post:
+        class: WebIsa\BackendBundle\Admin\AcuarelaAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Acuarelas", label: "Acuarela" }
+        arguments:
+            - ~
+            - WebIsa\BackendBundle\Entity\Acuarela
+            - ~
+        calls:
+            - [ setTranslationDomain, [WebIsaBackendBundle]]

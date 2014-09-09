@@ -23,7 +23,7 @@ class Acuarela
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="WebIsa\BackendBundle\Entity\Tecnica")
+     * @ORM\ManyToOne(target="WebIsa\BackendBundle\Entity\Tecnica")
      */
     private $tecnica;
 

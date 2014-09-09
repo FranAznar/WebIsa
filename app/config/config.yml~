@@ -1,5 +1,5 @@
 imports:
-    - { resource: @BackendBundle/Resources/config/admin.yml }
+    - { resource: @WebIsaBackendBundle/Resources/config/admin.yml }
     - { resource: parameters.yml }
     - { resource: security.yml }
     
